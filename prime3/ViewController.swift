@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+    // MARK: - Data
+    
     var number: Int? {
         didSet {
             if number != nil {
@@ -25,20 +27,24 @@ class ViewController: UIViewController {
         }
     }
     
-    func updateUI() {
-        if let currentStatus = isPrime {
-            textField.text = String(describing: number!)
-            
-            if currentStatus {
-                statusLabel.text = "Numar PRIM"
-            } else {
-                statusLabel.text = "Numar NEPRIM"
-            }
-        } else {
-            textField.text = ""
-            statusLabel.text = "NU E NUMAR"
+    
+    func check(prime number: Int!) -> Bool {
+        if number <= 1 {
+            return false
+        } else if number <= 3 {
+            return true
         }
+        
+        for i in 2..<number {
+            if number % i == 0 {
+                return false
+            }
+        }
+        
+        return true
     }
+    
+    // MARK: - Controller
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var statusLabel: UILabel!
@@ -61,20 +67,21 @@ class ViewController: UIViewController {
         }
     }
     
-    func check(prime number: Int!) -> Bool {
-        if number <= 1 {
-            return false
-        } else if number <= 3 {
-            return true
-        }
-        
-        for i in 2..<number {
-            if number % i == 0 {
-                return false
+    // MARK: - UI
+    
+    func updateUI() {
+        if let currentStatus = isPrime {
+            textField.text = String(describing: number!)
+            
+            if currentStatus {
+                statusLabel.text = "Numar PRIM"
+            } else {
+                statusLabel.text = "Numar NEPRIM"
             }
+        } else {
+            textField.text = ""
+            statusLabel.text = "NU E NUMAR"
         }
-        
-        return true
     }
 }
 
