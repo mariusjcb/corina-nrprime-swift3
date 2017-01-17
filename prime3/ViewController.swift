@@ -9,17 +9,72 @@
 import UIKit
 
 class ViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    var number: Int? {
+        didSet {
+            if number != nil {
+                isPrime = check(prime: number)
+            } else {
+                isPrime = nil
+            }
+        }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    var isPrime: Bool? {
+        didSet {
+            updateUI()
+        }
     }
-
-
+    
+    func updateUI() {
+        if let currentStatus = isPrime {
+            textField.text = String(describing: number!)
+            
+            if currentStatus {
+                statusLabel.text = "Numar PRIM"
+            } else {
+                statusLabel.text = "Numar NEPRIM"
+            }
+        } else {
+            textField.text = ""
+            statusLabel.text = "NU E NUMAR"
+        }
+    }
+    
+    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var statusLabel: UILabel!
+    
+    @IBAction func onTap(_ sender: UIButton) {
+        setNumber(fromString: textField.text)
+    }
+    
+    @IBAction func checkButtonTitle(_ sender: UIButton) {
+        setNumber(fromString: sender.currentTitle)
+    }
+    
+    @IBAction func textFieldContentChanged(_ sender: UITextField) {
+        setNumber(fromString: textField.text)
+    }
+    
+    func setNumber(fromString string: String?) {
+        if let content = string {
+            number = Int(content)
+        }
+    }
+    
+    func check(prime number: Int!) -> Bool {
+        if number <= 1 {
+            return false
+        } else if number <= 3 {
+            return true
+        }
+        
+        for i in 2..<number {
+            if number % i == 0 {
+                return false
+            }
+        }
+        
+        return true
+    }
 }
 

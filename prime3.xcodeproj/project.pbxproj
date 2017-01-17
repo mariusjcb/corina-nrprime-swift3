@@ -54,14 +54,22 @@
 		7AECECC51E2E64F0003D01AD /* prime3 */ = {
 			isa = PBXGroup;
 			children = (
-				7AECECC61E2E64F0003D01AD /* AppDelegate.swift */,
 				7AECECC81E2E64F0003D01AD /* ViewController.swift */,
 				7AECECCA1E2E64F0003D01AD /* Main.storyboard */,
+				7AECECD81E2E6529003D01AD /* Supporting Files */,
+			);
+			path = prime3;
+			sourceTree = "<group>";
+		};
+		7AECECD81E2E6529003D01AD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7AECECC61E2E64F0003D01AD /* AppDelegate.swift */,
 				7AECECCD1E2E64F0003D01AD /* Assets.xcassets */,
 				7AECECCF1E2E64F0003D01AD /* LaunchScreen.storyboard */,
 				7AECECD21E2E64F0003D01AD /* Info.plist */,
 			);
-			path = prime3;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
