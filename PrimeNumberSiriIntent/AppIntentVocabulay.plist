@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IntentPhrases</key>
+	<array>
+		<dict>
+			<key>IntentName</key>
+			<string>INIntent</string>
+			<key>IntentExamples</key>
+			<array>
+				<string>Check if 3 is a prime number</string>
+				<string>I want to know if 2 is prime</string>
+				<string>Check if 19 is prime or not</string>
+				<string>Check if 100 is prime</string>
+			</array>
+		</dict>
+	</array>
+</dict>
+</plist>

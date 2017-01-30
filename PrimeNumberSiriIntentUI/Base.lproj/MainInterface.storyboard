@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="PrimeNumberSiriIntentUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="150"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PRIM" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qdC-qO-cHG">
+                                <rect key="frame" x="40" y="68" width="241" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="FIe-XO-PCm"/>
+                                    <constraint firstAttribute="width" constant="241" id="U6g-2v-sX4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Numarul 50 este" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jXm-TG-9x8">
+                                <rect key="frame" x="16" y="31" width="288" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="Nrx-zd-g6u"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="scrollViewTexturedBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="qdC-qO-cHG" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" constant="24" id="6gg-G3-MrM"/>
+                            <constraint firstItem="jXm-TG-9x8" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="11" id="BS9-B8-MOe"/>
+                            <constraint firstItem="jXm-TG-9x8" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leadingMargin" id="Hdf-QZ-UIP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jXm-TG-9x8" secondAttribute="trailing" id="NYp-Zf-7KB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qdC-qO-cHG" secondAttribute="trailing" constant="23" id="aPs-uj-an5"/>
+                            <constraint firstItem="qdC-qO-cHG" firstAttribute="centerY" secondItem="zMn-AG-sqS" secondAttribute="centerY" constant="18.5" id="p7d-92-UEW"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="150"/>
+                    <connections>
+                        <outlet property="numberLabel" destination="jXm-TG-9x8" id="saD-FV-4ip"/>
+                        <outlet property="statusLabel" destination="qdC-qO-cHG" id="i5b-dN-Xj3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="33.600000000000001" y="47.676161919040482"/>
+        </scene>
+    </scenes>
+</document>

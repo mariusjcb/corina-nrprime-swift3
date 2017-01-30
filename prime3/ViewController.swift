@@ -9,47 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
-    // MARK: - Data
-    
-    var number: Int? {
-        didSet {
-            if number != nil {
-                isPrime = check(prime: number)
-            } else {
-                isPrime = nil
-            }
-        }
-    }
-
-    var isPrime: Bool? {
-        didSet {
-            updateUI()
-        }
-    }
-    
-    
-    func check(prime number: Int!) -> Bool {
-        if number <= 1 {
-            return false
-        } else if number <= 3 {
-            return true
-        }
-        
-        for i in 2..<number {
-            if number % i == 0 {
-                return false
-            }
-        }
-        
-        return true
-    }
-    
-    // MARK: - Controller
+    var number: PrimeNumber?
     
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var statusLabel: UILabel!
     
     @IBAction func onTap(_ sender: UIButton) {
+        textField.resignFirstResponder()
         setNumber(fromString: textField.text)
     }
     
@@ -63,24 +29,33 @@ class ViewController: UIViewController {
     
     func setNumber(fromString string: String?) {
         if let content = string {
-            number = Int(content)
+            number?.value = Int(content)
         }
+    }
+    
+    override func viewDidLoad() {
+        number = PrimeNumber(onPrimalityChanges: { [weak weakSelf = self] in
+            weakSelf?.updateUI()
+        })
     }
     
     // MARK: - UI
     
     func updateUI() {
-        if let currentStatus = isPrime {
-            textField.text = String(describing: number!)
+        if let currentStatus = number?.primality {
+            textField.text = String(describing: (number?.value)!)
             
             if currentStatus {
-                statusLabel.text = "Numar PRIM"
+                statusLabel.text = "PRIM"
+                self.view.backgroundColor = UIColor.green
             } else {
-                statusLabel.text = "Numar NEPRIM"
+                statusLabel.text = "NEPRIM"
+                self.view.backgroundColor = UIColor.red
             }
         } else {
             textField.text = ""
             statusLabel.text = "NU E NUMAR"
+            self.view.backgroundColor = UIColor.white
         }
     }
 }

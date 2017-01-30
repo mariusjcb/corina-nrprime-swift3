@@ -6,6 +6,8 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -22,63 +24,81 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcc-xU-Gfl">
-                                <rect key="frame" x="161" y="318" width="52" height="30"/>
+                                <rect key="frame" x="154" y="264" width="67" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Verifica"/>
                                 <connections>
                                     <action selector="onTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rZ3-48-qwm"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibk-nX-IWY">
-                                <rect key="frame" x="166" y="43" width="50" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9a4-iA-vba">
-                                <rect key="frame" x="139" y="273" width="97" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9a4-iA-vba">
+                                <rect key="frame" x="99" y="219" width="178" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="97" id="kkf-O2-ELB"/>
+                                    <constraint firstAttribute="width" secondItem="9a4-iA-vba" secondAttribute="height" multiplier="89:15" id="5cz-DZ-fch"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" keyboardAppearance="alert" returnKeyType="done"/>
                                 <connections>
                                     <action selector="textFieldContentChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="2OZ-mE-eZ2"/>
                                 </connections>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMF-SH-uer">
-                                <rect key="frame" x="172" y="366" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="54"/>
-                                <connections>
-                                    <action selector="checkButtonTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="247-Ef-pMR"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRv-m9-f63">
-                                <rect key="frame" x="172" y="419" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="97"/>
-                                <connections>
-                                    <action selector="checkButtonTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ax2-d5-gRL"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bv2-1K-M6F">
-                                <rect key="frame" x="172" y="472" width="30" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="5"/>
-                                <connections>
-                                    <action selector="checkButtonTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dG3-ww-f33"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="kuN-MX-cBL">
+                                <rect key="frame" x="31" y="543" width="313" height="74"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dMF-SH-uer">
+                                        <rect key="frame" x="0.0" y="0.0" width="98" height="74"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="54"/>
+                                        <connections>
+                                            <action selector="checkButtonTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="247-Ef-pMR"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MRv-m9-f63">
+                                        <rect key="frame" x="108" y="0.0" width="97" height="74"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="97"/>
+                                        <connections>
+                                            <action selector="checkButtonTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ax2-d5-gRL"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bv2-1K-M6F">
+                                        <rect key="frame" x="215" y="0.0" width="98" height="74"/>
+                                        <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <state key="normal" title="5"/>
+                                        <connections>
+                                            <action selector="checkButtonTitle:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dG3-ww-f33"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="74" id="6Qa-gT-j7s"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Status" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibk-nX-IWY">
+                                <rect key="frame" x="122" y="55" width="131" height="24"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="131" id="tew-IV-OIm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Ibk-nX-IWY" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="166" id="1g0-0D-0rf"/>
-                            <constraint firstItem="9a4-iA-vba" firstAttribute="centerX" secondItem="tcc-xU-Gfl" secondAttribute="centerX" id="5dF-6Q-DjH"/>
-                            <constraint firstItem="Ibk-nX-IWY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="23" id="COa-6Y-ugj"/>
-                            <constraint firstItem="tcc-xU-Gfl" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="RIm-bo-dZW"/>
-                            <constraint firstItem="tcc-xU-Gfl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="XrN-Oj-L1a"/>
-                            <constraint firstItem="tcc-xU-Gfl" firstAttribute="top" secondItem="9a4-iA-vba" secondAttribute="bottom" constant="15" id="bDU-53-hHq"/>
+                            <constraint firstItem="Ibk-nX-IWY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="46s-fK-waF"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="kuN-MX-cBL" secondAttribute="trailing" constant="15" id="8fd-Ei-1Gp"/>
+                            <constraint firstItem="tcc-xU-Gfl" firstAttribute="top" secondItem="9a4-iA-vba" secondAttribute="bottom" constant="15" id="PfL-OT-lMu"/>
+                            <constraint firstItem="9a4-iA-vba" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QM7-u3-ori"/>
+                            <constraint firstItem="9a4-iA-vba" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-100" id="VQd-ke-9OM"/>
+                            <constraint firstItem="kuN-MX-cBL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15" id="cMM-uU-naz"/>
+                            <constraint firstItem="tcc-xU-Gfl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="h7T-38-opV"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="kuN-MX-cBL" secondAttribute="bottom" constant="50" id="hwA-I6-3Qm"/>
+                            <constraint firstItem="Ibk-nX-IWY" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="35" id="rr8-WL-dw6"/>
                         </constraints>
                     </view>
                     <connections>
@@ -88,6 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
         </scene>
     </scenes>
 </document>

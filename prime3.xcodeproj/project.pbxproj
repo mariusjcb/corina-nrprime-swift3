@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A9371ED1E3ECA3E00A78582 /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9371EC1E3ECA3E00A78582 /* IntentHandler.swift */; };
+		7A9371F61E3ECA3F00A78582 /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A9371F51E3ECA3F00A78582 /* IntentsUI.framework */; };
+		7A9371F91E3ECA3F00A78582 /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A9371F81E3ECA3F00A78582 /* IntentViewController.swift */; };
+		7A9371FC1E3ECA3F00A78582 /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A9371FA1E3ECA3F00A78582 /* MainInterface.storyboard */; };
+		7A9372001E3ECA3F00A78582 /* PrimeNumberSiriIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A9371F31E3ECA3F00A78582 /* PrimeNumberSiriIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A9372031E3ECA3F00A78582 /* PrimeNumberSiriIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 7A9371EA1E3ECA3E00A78582 /* PrimeNumberSiriIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7A93720C1E3ECE2D00A78582 /* PrimeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93720B1E3ECE2D00A78582 /* PrimeNumber.swift */; };
+		7A93720E1E3EE20A00A78582 /* AppIntentVocabulay.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7A93720D1E3EE20A00A78582 /* AppIntentVocabulay.plist */; };
+		7A9372101E3EF17900A78582 /* PrimeNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A93720F1E3EF17900A78582 /* PrimeNumber.swift */; };
 		7AECECC71E2E64F0003D01AD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AECECC61E2E64F0003D01AD /* AppDelegate.swift */; };
 		7AECECC91E2E64F0003D01AD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AECECC81E2E64F0003D01AD /* ViewController.swift */; };
 		7AECECCC1E2E64F0003D01AD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AECECCA1E2E64F0003D01AD /* Main.storyboard */; };
@@ -14,7 +23,50 @@
 		7AECECD11E2E64F0003D01AD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AECECCF1E2E64F0003D01AD /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		7A9371FE1E3ECA3F00A78582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AECECBB1E2E64F0003D01AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A9371F21E3ECA3F00A78582;
+			remoteInfo = PrimeNumberSiriIntentUI;
+		};
+		7A9372011E3ECA3F00A78582 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7AECECBB1E2E64F0003D01AD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A9371E91E3ECA3E00A78582;
+			remoteInfo = PrimeNumberSiriIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7A93720A1E3ECA3F00A78582 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				7A9372031E3ECA3F00A78582 /* PrimeNumberSiriIntent.appex in Embed App Extensions */,
+				7A9372001E3ECA3F00A78582 /* PrimeNumberSiriIntentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		7A9371EA1E3ECA3E00A78582 /* PrimeNumberSiriIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrimeNumberSiriIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A9371EC1E3ECA3E00A78582 /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		7A9371EE1E3ECA3E00A78582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A9371F31E3ECA3F00A78582 /* PrimeNumberSiriIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PrimeNumberSiriIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A9371F51E3ECA3F00A78582 /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		7A9371F81E3ECA3F00A78582 /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		7A9371FB1E3ECA3F00A78582 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		7A9371FD1E3ECA3F00A78582 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A93720B1E3ECE2D00A78582 /* PrimeNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeNumber.swift; sourceTree = "<group>"; };
+		7A93720D1E3EE20A00A78582 /* AppIntentVocabulay.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = AppIntentVocabulay.plist; sourceTree = "<group>"; };
+		7A93720F1E3EF17900A78582 /* PrimeNumber.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrimeNumber.swift; sourceTree = "<group>"; };
 		7AECECC31E2E64F0003D01AD /* prime3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = prime3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7AECECC61E2E64F0003D01AD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7AECECC81E2E64F0003D01AD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,6 +77,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		7A9371E71E3ECA3E00A78582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A9371F01E3ECA3F00A78582 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9371F61E3ECA3F00A78582 /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AECECC01E2E64F0003D01AD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -35,10 +102,42 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A9371EB1E3ECA3E00A78582 /* PrimeNumberSiriIntent */ = {
+			isa = PBXGroup;
+			children = (
+				7A9371EC1E3ECA3E00A78582 /* IntentHandler.swift */,
+				7A9371EE1E3ECA3E00A78582 /* Info.plist */,
+				7A93720D1E3EE20A00A78582 /* AppIntentVocabulay.plist */,
+			);
+			path = PrimeNumberSiriIntent;
+			sourceTree = "<group>";
+		};
+		7A9371F41E3ECA3F00A78582 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A9371F51E3ECA3F00A78582 /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A9371F71E3ECA3F00A78582 /* PrimeNumberSiriIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				7A93720F1E3EF17900A78582 /* PrimeNumber.swift */,
+				7A9371F81E3ECA3F00A78582 /* IntentViewController.swift */,
+				7A9371FA1E3ECA3F00A78582 /* MainInterface.storyboard */,
+				7A9371FD1E3ECA3F00A78582 /* Info.plist */,
+			);
+			path = PrimeNumberSiriIntentUI;
+			sourceTree = "<group>";
+		};
 		7AECECBA1E2E64F0003D01AD = {
 			isa = PBXGroup;
 			children = (
 				7AECECC51E2E64F0003D01AD /* prime3 */,
+				7A9371EB1E3ECA3E00A78582 /* PrimeNumberSiriIntent */,
+				7A9371F71E3ECA3F00A78582 /* PrimeNumberSiriIntentUI */,
+				7A9371F41E3ECA3F00A78582 /* Frameworks */,
 				7AECECC41E2E64F0003D01AD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +146,8 @@
 			isa = PBXGroup;
 			children = (
 				7AECECC31E2E64F0003D01AD /* prime3.app */,
+				7A9371EA1E3ECA3E00A78582 /* PrimeNumberSiriIntent.appex */,
+				7A9371F31E3ECA3F00A78582 /* PrimeNumberSiriIntentUI.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -54,6 +155,7 @@
 		7AECECC51E2E64F0003D01AD /* prime3 */ = {
 			isa = PBXGroup;
 			children = (
+				7A93720B1E3ECE2D00A78582 /* PrimeNumber.swift */,
 				7AECECC81E2E64F0003D01AD /* ViewController.swift */,
 				7AECECCA1E2E64F0003D01AD /* Main.storyboard */,
 				7AECECD81E2E6529003D01AD /* Supporting Files */,
@@ -75,6 +177,40 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		7A9371E91E3ECA3E00A78582 /* PrimeNumberSiriIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A9372071E3ECA3F00A78582 /* Build configuration list for PBXNativeTarget "PrimeNumberSiriIntent" */;
+			buildPhases = (
+				7A9371E61E3ECA3E00A78582 /* Sources */,
+				7A9371E71E3ECA3E00A78582 /* Frameworks */,
+				7A9371E81E3ECA3E00A78582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrimeNumberSiriIntent;
+			productName = PrimeNumberSiriIntent;
+			productReference = 7A9371EA1E3ECA3E00A78582 /* PrimeNumberSiriIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		7A9371F21E3ECA3F00A78582 /* PrimeNumberSiriIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7A9372041E3ECA3F00A78582 /* Build configuration list for PBXNativeTarget "PrimeNumberSiriIntentUI" */;
+			buildPhases = (
+				7A9371EF1E3ECA3F00A78582 /* Sources */,
+				7A9371F01E3ECA3F00A78582 /* Frameworks */,
+				7A9371F11E3ECA3F00A78582 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PrimeNumberSiriIntentUI;
+			productName = PrimeNumberSiriIntentUI;
+			productReference = 7A9371F31E3ECA3F00A78582 /* PrimeNumberSiriIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		7AECECC21E2E64F0003D01AD /* prime3 */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7AECECD51E2E64F0003D01AD /* Build configuration list for PBXNativeTarget "prime3" */;
@@ -82,10 +218,13 @@
 				7AECECBF1E2E64F0003D01AD /* Sources */,
 				7AECECC01E2E64F0003D01AD /* Frameworks */,
 				7AECECC11E2E64F0003D01AD /* Resources */,
+				7A93720A1E3ECA3F00A78582 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				7A9371FF1E3ECA3F00A78582 /* PBXTargetDependency */,
+				7A9372021E3ECA3F00A78582 /* PBXTargetDependency */,
 			);
 			name = prime3;
 			productName = prime3;
@@ -102,9 +241,20 @@
 				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "University of Bucharest - Marius Ilie";
 				TargetAttributes = {
+					7A9371E91E3ECA3E00A78582 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2S2RSVRNML;
+						ProvisioningStyle = Automatic;
+					};
+					7A9371F21E3ECA3F00A78582 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2S2RSVRNML;
+						ProvisioningStyle = Automatic;
+					};
 					7AECECC21E2E64F0003D01AD = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 2S2RSVRNML;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -123,11 +273,29 @@
 			projectRoot = "";
 			targets = (
 				7AECECC21E2E64F0003D01AD /* prime3 */,
+				7A9371E91E3ECA3E00A78582 /* PrimeNumberSiriIntent */,
+				7A9371F21E3ECA3F00A78582 /* PrimeNumberSiriIntentUI */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		7A9371E81E3ECA3E00A78582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A93720E1E3EE20A00A78582 /* AppIntentVocabulay.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A9371F11E3ECA3F00A78582 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9371FC1E3ECA3F00A78582 /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AECECC11E2E64F0003D01AD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -141,10 +309,28 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		7A9371E61E3ECA3E00A78582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9371ED1E3ECA3E00A78582 /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7A9371EF1E3ECA3F00A78582 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A9372101E3EF17900A78582 /* PrimeNumber.swift in Sources */,
+				7A9371F91E3ECA3F00A78582 /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		7AECECBF1E2E64F0003D01AD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A93720C1E3ECE2D00A78582 /* PrimeNumber.swift in Sources */,
 				7AECECC91E2E64F0003D01AD /* ViewController.swift in Sources */,
 				7AECECC71E2E64F0003D01AD /* AppDelegate.swift in Sources */,
 			);
@@ -152,7 +338,28 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		7A9371FF1E3ECA3F00A78582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A9371F21E3ECA3F00A78582 /* PrimeNumberSiriIntentUI */;
+			targetProxy = 7A9371FE1E3ECA3F00A78582 /* PBXContainerItemProxy */;
+		};
+		7A9372021E3ECA3F00A78582 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7A9371E91E3ECA3E00A78582 /* PrimeNumberSiriIntent */;
+			targetProxy = 7A9372011E3ECA3F00A78582 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
+		7A9371FA1E3ECA3F00A78582 /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A9371FB1E3ECA3F00A78582 /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
 		7AECECCA1E2E64F0003D01AD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -172,6 +379,58 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7A9372051E3ECA3F00A78582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2S2RSVRNML;
+				INFOPLIST_FILE = PrimeNumberSiriIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = unibuc.ios1.mariusilie.prime3.PrimeNumberSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A9372061E3ECA3F00A78582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2S2RSVRNML;
+				INFOPLIST_FILE = PrimeNumberSiriIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = unibuc.ios1.mariusilie.prime3.PrimeNumberSiriIntentUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		7A9372081E3ECA3F00A78582 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2S2RSVRNML;
+				INFOPLIST_FILE = PrimeNumberSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = unibuc.ios1.mariusilie.prime3.PrimeNumberSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		7A9372091E3ECA3F00A78582 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 2S2RSVRNML;
+				INFOPLIST_FILE = PrimeNumberSiriIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = unibuc.ios1.mariusilie.prime3.PrimeNumberSiriIntent;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
 		7AECECD31E2E64F0003D01AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -266,6 +525,7 @@
 		7AECECD61E2E64F0003D01AD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2S2RSVRNML;
 				INFOPLIST_FILE = prime3/Info.plist;
@@ -279,6 +539,7 @@
 		7AECECD71E2E64F0003D01AD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 2S2RSVRNML;
 				INFOPLIST_FILE = prime3/Info.plist;
@@ -292,6 +553,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		7A9372041E3ECA3F00A78582 /* Build configuration list for PBXNativeTarget "PrimeNumberSiriIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A9372051E3ECA3F00A78582 /* Debug */,
+				7A9372061E3ECA3F00A78582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		7A9372071E3ECA3F00A78582 /* Build configuration list for PBXNativeTarget "PrimeNumberSiriIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A9372081E3ECA3F00A78582 /* Debug */,
+				7A9372091E3ECA3F00A78582 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		7AECECBE1E2E64F0003D01AD /* Build configuration list for PBXProject "prime3" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -308,6 +585,7 @@
 				7AECECD71E2E64F0003D01AD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

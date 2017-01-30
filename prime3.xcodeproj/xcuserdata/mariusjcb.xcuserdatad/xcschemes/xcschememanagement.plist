@@ -4,6 +4,16 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>PrimeNumberSiriIntent.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+		<key>PrimeNumberSiriIntentUI.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
 		<key>prime3.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -12,6 +22,16 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
+		<key>7A9371E91E3ECA3E00A78582</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>7A9371F21E3ECA3F00A78582</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
 		<key>7AECECC21E2E64F0003D01AD</key>
 		<dict>
 			<key>primary</key>
